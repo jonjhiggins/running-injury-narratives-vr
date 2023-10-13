@@ -11,7 +11,6 @@ public class MerryGoRoundAthleteStories : MonoBehaviour
     public UnityEvent audioClipEnd;
 
     private int currentAudioClipIndex = 0;
-    private bool isPlaying;
 
     // Update is called once per frame
     public void HandleAudioVOClipEnd(int audioClipIndex)
@@ -21,28 +20,37 @@ public class MerryGoRoundAthleteStories : MonoBehaviour
 
     }
 
-    public void GrabEvent()
+    public void OnSelect()
     {
-        Debug.Log("grab");
         StartCoroutine(PlayAudio());
+    }
+
+    public void OnUnselect()
+    {
+        audioSource.Pause();
     }
 
     IEnumerator PlayAudio()
     {
-        if (isPlaying || currentAudioClipIndex > athleteStoryAudioVO.Length - 1)
+        Debug.Log(audioSource.time);
+        Debug.Log(audioSource.clip != null ? audioSource.clip.length : null);
+        if (audioSource.isPlaying || currentAudioClipIndex > athleteStoryAudioVO.Length - 1)
         {
             yield break;
         }
         audioSource.clip = athleteStoryAudioVO[currentAudioClipIndex];
         audioSource.Play();
-        isPlaying = true;
         yield return new WaitWhile(() => audioSource.isPlaying);
+        // Handle paused audio
+        if (audioSource.time < audioSource.clip.length)
+        {
+            yield break;
+        }
         HandleAudioEnd();
     }
 
     private void HandleAudioEnd()
     {
-        isPlaying = false;
         audioClipEnd.Invoke();
         athleteStoryObject.SetActive(false);
     }
