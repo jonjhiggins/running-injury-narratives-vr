@@ -715,13 +715,14 @@ GameObject:
   - component: {fileID: 931232407}
   - component: {fileID: 931232406}
   - component: {fileID: 931232408}
+  - component: {fileID: 931232409}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &931232401
 Transform:
   m_ObjectHideFlags: 0
@@ -913,10 +914,34 @@ MonoBehaviour:
       m_Calls: []
   _whenHover:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 931232409}
+        m_TargetAssemblyTypeName: HoverFade, Assembly-CSharp
+        m_MethodName: OnHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 931232409}
+        m_TargetAssemblyTypeName: HoverFade, Assembly-CSharp
+        m_MethodName: OnUnhover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
@@ -941,6 +966,20 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &931232409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931232400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7762b4b2e0b5f344923f8aa0dcd521f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 931232403}
+  hoverMaterial: {fileID: 2100000, guid: 79d6ce96d8892c243ab6fc8c11ad357f, type: 2}
 --- !u!4 &1007761384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9048238750646488156, guid: ea16c3c8c1688234fa81a4f39339bf1b, type: 3}
@@ -1508,7 +1547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1458619724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,7 +1585,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  playbackSpeed: 1
 --- !u!82 &1458619725
 AudioSource:
   m_ObjectHideFlags: 0
