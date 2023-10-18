@@ -1,23 +1,50 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+#nullable enable
+
 
 public class MerryGoRoundAthleteStories : MonoBehaviour
 {
-    public GameObject athleteStoryObject;
-    public AudioClip[] athleteStoryAudioVO;
-    public AudioSource audioSource;
-    public UnityEvent audioClipEnd;
+    [Serializable]
+    private struct AthleteStory
+    {
+        public GameObject athleteStoryObject;
+        public AudioClip athleteStoryAudioVO;
+    }
 
-    private int currentAudioClipIndex = 0;
+    [SerializeField]
+    private AthleteStory[] athleteStories;
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    private UnityEvent audioClipEnd;
+    [SerializeField]
+    private GameObject defaultAthleteStoryObject;
+    [SerializeField]
+    private bool useDefaultAthleteStoryObject;
+
+    private AthleteStory? currentAthleteStory = null;
 
     // Update is called once per frame
     public void HandleAudioVOClipEnd(int audioClipIndex)
     {
-        currentAudioClipIndex = audioClipIndex;
-        athleteStoryObject.SetActive(true);
+        currentAthleteStory = audioClipIndex < athleteStories.Length ? athleteStories[audioClipIndex] : null;
 
+        var athleteGameObject = GetCurrentAthleteStoryObject();
+        athleteGameObject?.SetActive(true);
+
+    }
+
+    // For user testing we want to be able to have a single basic object for all athlete stories
+    // Can be removed following user test
+    
+    private GameObject? GetCurrentAthleteStoryObject()
+    
+    {
+        return useDefaultAthleteStoryObject ? defaultAthleteStoryObject : currentAthleteStory?.athleteStoryObject;
     }
 
     public void OnSelect()
@@ -32,17 +59,15 @@ public class MerryGoRoundAthleteStories : MonoBehaviour
 
     IEnumerator PlayAudio()
     {
-        Debug.Log(audioSource.time);
-        Debug.Log(audioSource.clip != null ? audioSource.clip.length : null);
-        if (audioSource.isPlaying || currentAudioClipIndex > athleteStoryAudioVO.Length - 1)
+        if (audioSource.isPlaying || currentAthleteStory == null)
         {
             yield break;
         }
-        audioSource.clip = athleteStoryAudioVO[currentAudioClipIndex];
+        audioSource.clip = currentAthleteStory?.athleteStoryAudioVO;
         audioSource.Play();
         yield return new WaitWhile(() => audioSource.isPlaying);
         // Handle paused audio
-        if (audioSource.time < audioSource.clip.length)
+        if (audioSource.time < audioSource?.clip?.length)
         {
             yield break;
         }
@@ -52,6 +77,8 @@ public class MerryGoRoundAthleteStories : MonoBehaviour
     private void HandleAudioEnd()
     {
         audioClipEnd.Invoke();
-        athleteStoryObject.SetActive(false);
+        var athleteGameObject = GetCurrentAthleteStoryObject();
+        athleteGameObject?.SetActive(false);
     }
 }
+#nullable disable
