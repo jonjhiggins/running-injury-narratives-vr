@@ -52,11 +52,6 @@ public class MerryGoRoundAthleteStories : MonoBehaviour
         StartCoroutine(PlayAudio());
     }
 
-    public void OnUnselect()
-    {
-        audioSource.Pause();
-    }
-
     IEnumerator PlayAudio()
     {
         if (audioSource.isPlaying || currentAthleteStory == null)
