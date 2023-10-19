@@ -5,14 +5,24 @@ using UnityEngine.Events;
 
 public class MerryGoRoundVO : MonoBehaviour
 {
-    public AudioClip[] _VOFiles;
-    public AudioSource audioSource;
-    public UnityEvent<int> audioClipEnd;
-
+    [SerializeField]
+    private AudioClip[] _VOFiles;
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    private UnityEvent<int> audioClipEnd;
+    [SerializeField]
     private int currentAudioClipIndex = 0;
+    [SerializeField]
+    private bool skipToAthleteStory;
 
     void Start()
     {
+        if (skipToAthleteStory)
+        {
+            audioClipEnd.Invoke(currentAudioClipIndex);
+            return;
+        }
         StartCoroutine(LoadAndPlayAudio());
     }
 
