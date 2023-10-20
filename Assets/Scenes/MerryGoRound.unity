@@ -1180,7 +1180,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7528830509514277316, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
   m_PrefabInstance: {fileID: 124409565795827}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &931232410
+--- !u!114 &931232429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1194,7 +1194,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   athleteStoryObject: {fileID: 931232400}
   athleteStoryAudioVO: {fileID: 8300000, guid: 5f27cec3c0a6a6649a14793c1233578b, type: 3}
-  merryGoRoundAthleteStories: {fileID: 0}
+  merryGoRoundAthleteStories: {fileID: 1011806222}
+--- !u!114 &931232430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931232400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8607181c76000544499f77dfb1019a5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 1011806221}
+  minScale: {x: 0.2, y: 0.1, z: 0.1}
+  maxScale: {x: 0.4, y: 0.2, z: 0.2}
+  loudnessSensibility: 2
+  threshold: 0.1
 --- !u!1001 &982553380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,7 +1458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   athleteStories:
   - {fileID: 822180940}
-  - {fileID: 931232410}
+  - {fileID: 931232429}
   - {fileID: 464899099}
   - {fileID: 982553383}
   - {fileID: 1775608475}
@@ -2635,7 +2652,7 @@ PrefabInstance:
     - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: _whenHover.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 931232410}
+      objectReference: {fileID: 931232429}
     - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: _whenUnhover.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -2658,7 +2675,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 931232410}
+      addedObject: {fileID: 931232429}
+    - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 931232430}
   m_SourcePrefab: {fileID: 100100000, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
 --- !u!114 &3627599131750960111
 MonoBehaviour:
