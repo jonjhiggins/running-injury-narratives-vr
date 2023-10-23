@@ -8,11 +8,17 @@ public abstract class AthleteStory : MonoBehaviour
     [SerializeField]
     protected AudioClip athleteStoryAudioVO;
     public MerryGoRoundAthleteStories merryGoRoundAthleteStories;
+    private bool hasPlayed;
 
     // Update is called once per frame
     public void PlayAudio()
     {
+        if (hasPlayed)
+        {
+            return;
+        }
         StartCoroutine(merryGoRoundAthleteStories.PlayAudio(athleteStoryAudioVO));
+        hasPlayed = true;
     }
 
     public abstract void OnSelect();
