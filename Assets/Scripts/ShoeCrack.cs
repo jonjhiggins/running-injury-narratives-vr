@@ -7,11 +7,9 @@ public class ShoeCrack : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
     [SerializeField]
-    private Material material;
-    [SerializeField]
-    private Renderer _renderer;
-    [SerializeField]
     private float timeToStart;
+    [SerializeField]
+    private MeshDestroy meshDestroy;
 
     public void Play()
     {
@@ -22,6 +20,6 @@ public class ShoeCrack : MonoBehaviour
     {
         yield return new WaitForSeconds(timeToStart);
         audioSource.Play();
-        _renderer.material = material;
+        meshDestroy.DestroyMesh();
     }
 }
