@@ -10,10 +10,16 @@ public class ShoeCrack : MonoBehaviour
     private float timeToStart;
     [SerializeField]
     private MeshDestroy meshDestroy;
+    private bool hasCracked;
 
     public void Play()
     {
+        if (hasCracked)
+        {
+            return;
+        }
         StartCoroutine(Crack());
+        hasCracked = true;
     }
 
     private IEnumerator Crack()
