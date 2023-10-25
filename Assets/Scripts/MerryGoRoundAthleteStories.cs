@@ -39,11 +39,6 @@ public class MerryGoRoundAthleteStories : MonoBehaviour
         audioSource.clip = audioClip;
         audioSource.Play();
         yield return new WaitWhile(() => audioSource.isPlaying);
-        // Handle paused audio
-        if (audioSource.time < audioSource?.clip?.length)
-        {
-            yield break;
-        }
         HandleAudioEnd();
 
     }
