@@ -270,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 45e6c659832f25e49bef63f523257513, type: 2}
     - target: {fileID: 919132149155446097, guid: 2cb617cd28c495745871a1f8b1c566ee, type: 3}
       propertyPath: m_Name
-      value: medal
+      value: As2Medal
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2cb617cd28c495745871a1f8b1c566ee, type: 3}
       propertyPath: m_IsActive
@@ -431,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: cc4b061f4ce98cd49a1524af5f22bae2, type: 2}
     - target: {fileID: 919132149155446097, guid: 2cb617cd28c495745871a1f8b1c566ee, type: 3}
       propertyPath: m_Name
-      value: medal copy
+      value: As2Medal copy
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2cb617cd28c495745871a1f8b1c566ee, type: 3}
       propertyPath: m_IsActive
@@ -827,6 +827,8 @@ PlayableDirector:
     value: {fileID: 857047029}
   - key: {fileID: 2692662768682600644, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
     value: {fileID: 1943749041}
+  - key: {fileID: 173132742930257380, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
+    value: {fileID: 1106161280}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &562314634
@@ -894,7 +896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 39908678aa3866e49b6601d5b9099582, type: 3}
       propertyPath: m_Name
-      value: dumbbell
+      value: As5Dumbell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1426,7 +1428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2006259985f7f124ab3a91f57d0c51db, type: 3}
       propertyPath: m_Name
-      value: shoe-low-poly
+      value: As1Shoe
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2006259985f7f124ab3a91f57d0c51db, type: 3}
       propertyPath: m_IsActive
@@ -2249,7 +2251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b18c247ff8f6a8346a8cf86704b7b7f9, type: 3}
       propertyPath: m_Name
-      value: Male_Casual
+      value: As4Man
       objectReference: {fileID: 0}
     - target: {fileID: 1921771625734807920, guid: b18c247ff8f6a8346a8cf86704b7b7f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3319,7 +3321,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 01a590d436614024f9c04df77efd317b, type: 2}
     - target: {fileID: 919132149155446097, guid: 8d365f3b32d357346965b68ce63fce5f, type: 3}
       propertyPath: m_Name
-      value: massage-ball
+      value: As3MassageBall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3662,7 +3664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e45ec9acd676d4c40bcdde58efc6ad62, type: 3}
       propertyPath: m_Name
-      value: vest
+      value: As6Vest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
