@@ -3533,6 +3533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890c83ed7527f674aa5712f057114b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneGameObject: {fileID: 0}
   dumbbellGameObject: {fileID: 621341331}
 --- !u!114 &1775608476
 MonoBehaviour:
