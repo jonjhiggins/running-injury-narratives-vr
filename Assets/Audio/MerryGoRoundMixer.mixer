@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-7786978258675232501
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: e9a7e77161a42184c8b8fb2acffa5c60
+  m_EffectName: OculusSpatializerReflection
+  m_MixLevel: 631d9515071ea154d8a13a2dbe1388ed
+  m_Parameters:
+  - m_ParameterName: GScale
+    m_GUID: 1130603b35aa7d94a9956ec6ab3af5ce
+  - m_ParameterName: E.Rflt On
+    m_GUID: 838b316b0ff9020429c42ccd453f0b1d
+  - m_ParameterName: E.Rflt Rev On
+    m_GUID: af7a47fbf657fe744aa6078a0bf089c5
+  - m_ParameterName: Room X
+    m_GUID: d6c5a058130070c429c69da4218d3244
+  - m_ParameterName: Room Y
+    m_GUID: 0cc5a024cfdd9ef4183d5c7a44e56c63
+  - m_ParameterName: Room Z
+    m_GUID: dd3f9f7f8f305024cb1c4185bb071236
+  - m_ParameterName: Left
+    m_GUID: ec0ec16290175cf47a4f8972166f50e3
+  - m_ParameterName: Right
+    m_GUID: 6f89bc6f7f52fb340b858a7a18504879
+  - m_ParameterName: Up
+    m_GUID: d5af1a6a06cf37e429dcd247e339560e
+  - m_ParameterName: Down
+    m_GUID: 8b9bfcb247d45da489ef3fda2fec3c0c
+  - m_ParameterName: Behind
+    m_GUID: e944ca33069cccc4e9233ff476a9f9b7
+  - m_ParameterName: Front
+    m_GUID: 0d000e16cc71d9046ae9f9b347626830
+  - m_ParameterName: Shared Rev Min
+    m_GUID: 9f57d22d3b54c3342ae24451ac0a8ffd
+  - m_ParameterName: Shared Rev Max
+    m_GUID: 75a810f417db4cd488228068ab55b240
+  - m_ParameterName: Shared Rev Wet
+    m_GUID: 7b5dcae775be3364689a1f61ba25ff2c
+  - m_ParameterName: Prop Quality
+    m_GUID: 27a3e12fa85b08048976e02e40e702dc
+  - m_ParameterName: Voice Limit
+    m_GUID: f33eb39d2b4ad8048a28cbec1d9a1667
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-7662804172225323644
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
