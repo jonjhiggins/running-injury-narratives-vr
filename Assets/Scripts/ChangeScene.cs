@@ -7,7 +7,9 @@ public class ChangeScene : MonoBehaviour
 {
     [SerializeField]
     private enum Scenes {
-        MerryGoRound
+        Intro,
+        MerryGoRound,
+        Tutorial
     }
     [SerializeField]
     private Scenes sceneToChangeTo;
