@@ -841,6 +841,7 @@ GameObject:
   - component: {fileID: 614999937}
   - component: {fileID: 614999939}
   - component: {fileID: 614999938}
+  - component: {fileID: 614999940}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -1034,6 +1035,7 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: c36651638858be344aa535e7f464b9c1, type: 2}
+    - {fileID: 11400000, guid: c301193e8b2aa3f46941f484bd0eb92c, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -1049,6 +1051,45 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 614999935}
+          m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+          m_MethodName: Pause
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 614999940}
+          m_TargetAssemblyTypeName: TutorialPlayTimelineOnPickUp, Assembly-CSharp
+          m_MethodName: AlowTimelinePlay
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &614999940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614999934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7879b0962b4140408f3c1a09cef37a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timeline: {fileID: 614999935}
 --- !u!1 &617259726
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +2203,34 @@ PrefabInstance:
     - target: {fileID: 7528830509514277316, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 614999940}
+    - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WhenSelectTutorialObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TutorialPlayTimelineOnPickUp, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904055369688692945, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
