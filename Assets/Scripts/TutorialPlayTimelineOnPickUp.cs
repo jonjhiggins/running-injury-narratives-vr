@@ -15,7 +15,6 @@ public class TutorialPlayTimelineOnPickUp : MonoBehaviour {
 
     public void WhenSelectTutorialObject()
     {
-        Debug.Log($"WhenSelectTutorialObject {allowTimelinePlay}");
         if (!allowTimelinePlay)
         {
             return;
@@ -27,7 +26,6 @@ public class TutorialPlayTimelineOnPickUp : MonoBehaviour {
     public void AlowTimelinePlay()
     {
         allowTimelinePlay = true;
-        Debug.Log($"AlowTimelinePlay {allowTimelinePlay}");
     }
 
 }
