@@ -666,7 +666,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3557056212726609928}
-  - component: {fileID: 2316120026946774892}
   m_Layer: 0
   m_Name: OVRRightHandVisual
   m_TagString: Untagged
@@ -690,49 +689,6 @@ Transform:
   - {fileID: 3297939960290156536}
   m_Father: {fileID: 4608376776571510506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2316120026946774892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100649506487207514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9af9ea683544b184083cef283557012d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hand: {fileID: 0}
-  _skinnedMeshRenderer: {fileID: 621630934679873224}
-  _updateRootPose: 1
-  _updateRootScale: 1
-  _root: {fileID: 3297939960290156536}
-  _handMaterialPropertyBlockEditor: {fileID: 6008822402882612428}
-  _jointTransforms:
-  - {fileID: 1932105982431448499}
-  - {fileID: 1130686028047581923}
-  - {fileID: 1597413019878199193}
-  - {fileID: 4404100116126093765}
-  - {fileID: 6239914384697278461}
-  - {fileID: 5224472539397657634}
-  - {fileID: 6963164859020961382}
-  - {fileID: 3063330137967177703}
-  - {fileID: 6279031809219670077}
-  - {fileID: 6494327112344985521}
-  - {fileID: 4356027383622441147}
-  - {fileID: 4849806773961151490}
-  - {fileID: 2101713076169048241}
-  - {fileID: 5297252240654811985}
-  - {fileID: 2165606692773677707}
-  - {fileID: 5825687295513072658}
-  - {fileID: 6639285916666872911}
-  - {fileID: 6864308968103696312}
-  - {fileID: 7167797052781317681}
-  - {fileID: 4185341191740598009}
-  - {fileID: 4906318198486201707}
-  - {fileID: 7246559444863694275}
-  - {fileID: 1387126792919892193}
-  - {fileID: 3423025936997282769}
 --- !u!1 &2324373419887766321
 GameObject:
   m_ObjectHideFlags: 0
