@@ -5726,6 +5726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438544206}
   - component: {fileID: 438544207}
+  - component: {fileID: 438544208}
   m_Layer: 0
   m_Name: TrackLinesHighlighted2
   m_TagString: Untagged
@@ -5767,6 +5768,27 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!95 &438544208
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438544205}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &464899096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6171,6 +6193,12 @@ PlayableDirector:
     value: {fileID: 438544205}
   - key: {fileID: -5865015596424567490, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
     value: {fileID: 730258087}
+  - key: {fileID: 12332200732086363, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
+    value: {fileID: 1858485189}
+  - key: {fileID: 7903827568633899257, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
+    value: {fileID: 438544208}
+  - key: {fileID: 6859141793732368206, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
+    value: {fileID: 730258090}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &562314634
@@ -6416,6 +6444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 730258088}
   - component: {fileID: 730258089}
+  - component: {fileID: 730258090}
   m_Layer: 0
   m_Name: TrackLinesHighlighted3
   m_TagString: Untagged
@@ -6457,6 +6486,27 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!95 &730258090
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730258087}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &771343799
 GameObject:
   m_ObjectHideFlags: 0
@@ -10055,6 +10105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1858485187}
   - component: {fileID: 1858485188}
+  - component: {fileID: 1858485189}
   m_Layer: 0
   m_Name: TrackLinesHighlighted1
   m_TagString: Untagged
@@ -10096,6 +10147,27 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!95 &1858485189
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858485186}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1870987297
 GameObject:
   m_ObjectHideFlags: 0
