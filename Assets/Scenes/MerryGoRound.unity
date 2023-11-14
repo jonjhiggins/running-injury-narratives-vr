@@ -5725,6 +5725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 438544206}
+  - component: {fileID: 438544207}
   m_Layer: 0
   m_Name: TrackLinesHighlighted2
   m_TagString: Untagged
@@ -5750,6 +5751,22 @@ Transform:
   - {fileID: 2110796758}
   m_Father: {fileID: 5383158095485671032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &438544207
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438544205}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 0a841d6b7086a5944ae1b4103bfb3168, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 0a841d6b7086a5944ae1b4103bfb3168, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &464899096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6392,6 +6409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 730258088}
+  - component: {fileID: 730258089}
   m_Layer: 0
   m_Name: TrackLinesHighlighted3
   m_TagString: Untagged
@@ -6417,6 +6435,22 @@ Transform:
   - {fileID: 1256426623}
   m_Father: {fileID: 5383158095485671032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &730258089
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730258087}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 0a841d6b7086a5944ae1b4103bfb3168, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 0a841d6b7086a5944ae1b4103bfb3168, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &771343799
 GameObject:
   m_ObjectHideFlags: 0
@@ -10014,6 +10048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1858485187}
+  - component: {fileID: 1858485188}
   m_Layer: 0
   m_Name: TrackLinesHighlighted1
   m_TagString: Untagged
@@ -10039,6 +10074,22 @@ Transform:
   - {fileID: 1720803656}
   m_Father: {fileID: 5383158095485671032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1858485188
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858485186}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 0a841d6b7086a5944ae1b4103bfb3168, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 0a841d6b7086a5944ae1b4103bfb3168, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1870987297
 GameObject:
   m_ObjectHideFlags: 0
