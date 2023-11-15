@@ -2401,8 +2401,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   headset: {fileID: 53664464}
+  distanceIndicator: {fileID: 322184245}
   boxCollider: {fileID: 1101389005}
-  maxRange: 0.2
+  maxRange: 0.15
   OnInRange:
     m_PersistentCalls:
       m_Calls:
