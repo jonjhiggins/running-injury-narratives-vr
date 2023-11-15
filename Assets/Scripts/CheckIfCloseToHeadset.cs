@@ -17,6 +17,7 @@ public class CheckIfCloseToHeadset : MonoBehaviour
     private UnityEvent OnInRange;
 
     private bool checkDistance = false;
+    private bool checkDistanceHasBeenSet = false;
 
     void Update()
     {
@@ -48,8 +49,16 @@ public class CheckIfCloseToHeadset : MonoBehaviour
         distanceIndicator.transform.localScale = scaleDistanceIndicator;
     }
 
+    // The select event on Pointable Unity Wrapper on 
+    // athlete object is called everytime its picked up.
+    // We only want to set checkDistance the first time it is picked up
     public void StartCheckDistance()
     {
+        if (checkDistanceHasBeenSet)
+        {
+            return;
+        }
         checkDistance = true;
+        checkDistanceHasBeenSet = true;
     }
 }
