@@ -16,7 +16,7 @@ public class CheckIfCloseToHeadset : MonoBehaviour
     [SerializeField]
     private UnityEvent OnInRange;
 
-    private bool checkDistance;
+    private bool checkDistance = false;
 
     void Update()
     {
