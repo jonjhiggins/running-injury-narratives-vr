@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2604303643714351958}
   - component: {fileID: 2836173567537281878}
   - component: {fileID: 4037805230717648354}
+  - component: {fileID: 5597122363703605192}
   m_Layer: 0
   m_Name: Glow Background
   m_TagString: Untagged
@@ -106,6 +107,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!111 &5597122363703605192
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563564265984334923}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: ad7505d28a561e640a4e36f48fb21100, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: ad7505d28a561e640a4e36f48fb21100, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1863214569686000786
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,6 +135,7 @@ GameObject:
   - component: {fileID: 5059228516900094503}
   - component: {fileID: 7375684297843751971}
   - component: {fileID: 2150238943553789194}
+  - component: {fileID: 3053296816541883992}
   m_Layer: 0
   m_Name: Glow Ring
   m_TagString: Untagged
@@ -212,6 +230,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!111 &3053296816541883992
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863214569686000786}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 29ac5322ba76f4a4ca0e661d42b1ff4d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 29ac5322ba76f4a4ca0e661d42b1ff4d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5847284129328880605
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &432738360013701184
 Transform:
   m_ObjectHideFlags: 0

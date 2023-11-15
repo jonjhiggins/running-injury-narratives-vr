@@ -6877,7 +6877,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  CheckDistanceOnStart: 1
 --- !u!1 &857047025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2cb617cd28c495745871a1f8b1c566ee, type: 3}
