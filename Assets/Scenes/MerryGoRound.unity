@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06797466, g: 0.08487729, b: 0.19856066, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6091,6 +6091,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c301193e8b2aa3f46941f484bd0eb92c, type: 2}
     - {fileID: 11400000, guid: 4626a3915f85bba4093f83456d7bb4eb, type: 2}
     - {fileID: 11400000, guid: 569eae23ed9889f4bbc4a4bca0ca941f, type: 2}
+    - {fileID: 11400000, guid: e54fced315b0dac4ea0fc637c39e4e31, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -6125,6 +6126,20 @@ MonoBehaviour:
         - m_Target: {fileID: 1305760995}
           m_TargetAssemblyTypeName: SkyColourChange, Assembly-CSharp
           m_MethodName: FadeToLight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1305760995}
+          m_TargetAssemblyTypeName: SkyColourChange, Assembly-CSharp
+          m_MethodName: FadeToEnd
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6199,6 +6214,8 @@ PlayableDirector:
     value: {fileID: 438544208}
   - key: {fileID: 6859141793732368206, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
     value: {fileID: 730258090}
+  - key: {fileID: -7009670642312313908, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
+    value: {fileID: 5383158095485671034}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &562314634
@@ -6613,6 +6630,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &782628375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1253097157588519969, guid: ce33628a1936a1e4b811bbfc4a4f39d0, type: 3}
+  m_PrefabInstance: {fileID: 5383158095485671031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &815840056 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3550832292187419422, guid: e7e41a5ed3743804eacae1e009586e72, type: 3}
@@ -8275,9 +8297,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98b93d13ee07684ca0aa1f4d83d69f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startColor: {r: 0.5372549, g: 0.5372549, b: 0.5372549, a: 1}
-  darkColor: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
-  lightColor: {r: 0.8679245, g: 0.7860359, b: 0.7587516, a: 1}
+  startColours:
+    topColor: {r: 0.6392157, g: 0.69411767, b: 0.94509804, a: 0}
+    middleColor: {r: 0.18431373, g: 0.20392157, b: 0.3019608, a: 0}
+    bottomColor: {r: 0.36078432, g: 0.40392157, b: 0.6039216, a: 0}
+  darkColours:
+    topColor: {r: 0.0627451, g: 0.07058824, b: 0.105882354, a: 0}
+    middleColor: {r: 0.18431373, g: 0.20392157, b: 0.3019608, a: 0}
+    bottomColor: {r: 0.0627451, g: 0.07058824, b: 0.105882354, a: 0}
+  lightColours:
+    topColor: {r: 0.8666667, g: 0.7764706, b: 0.85882354, a: 0}
+    middleColor: {r: 0.5372549, g: 0.40784314, b: 0.5254902, a: 0}
+    bottomColor: {r: 0.43137255, g: 0.4509804, b: 0.5411765, a: 0}
+  endColours:
+    topColor: {r: 0, g: 0, b: 0, a: 0}
+    middleColor: {r: 0, g: 0, b: 0, a: 0}
+    bottomColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1315146781
 GameObject:
   m_ObjectHideFlags: 0
@@ -8935,7 +8970,7 @@ Transform:
   m_GameObject: {fileID: 1542493189}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 1, z: 20}
+  m_LocalPosition: {x: 6, y: 1, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10931,13 +10966,55 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1884815359625516699, guid: ce33628a1936a1e4b811bbfc4a4f39d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 730258088}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1253097157588519969, guid: ce33628a1936a1e4b811bbfc4a4f39d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5383158095485671034}
+    - targetCorrespondingSourceObject: {fileID: 1253097157588519969, guid: ce33628a1936a1e4b811bbfc4a4f39d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5383158095485671033}
   m_SourcePrefab: {fileID: 100100000, guid: ce33628a1936a1e4b811bbfc4a4f39d0, type: 3}
 --- !u!4 &5383158095485671032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1884815359625516699, guid: ce33628a1936a1e4b811bbfc4a4f39d0, type: 3}
   m_PrefabInstance: {fileID: 5383158095485671031}
   m_PrefabAsset: {fileID: 0}
+--- !u!111 &5383158095485671033
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782628375}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &5383158095485671034
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782628375}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08cd476ab205dc54a8ef7d07c6575400, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
