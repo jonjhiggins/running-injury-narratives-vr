@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 1
+    volume: 0
 --- !u!74 &-9061612664624715744
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -6416,7 +6416,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: vo-4-trapped-in-body-01
   - m_Version: 1
-    m_Start: 124.37804815981714
+    m_Start: 122.44733416653821
     m_ClipIn: 0.09566828677792216
     m_Asset: {fileID: -6512819811756061836}
     m_Duration: 5.9386174275077925
@@ -6467,7 +6467,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: vo-4-trapped-in-body-02
   - m_Version: 1
-    m_Start: 131.13085918367403
+    m_Start: 129.38333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 5769288222102615969}
     m_Duration: 1.7763265306122449
@@ -6518,7 +6518,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: vo-4-trapped-in-body-03
   - m_Version: 1
-    m_Start: 133.780859183674
+    m_Start: 131.96666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 7373611738746343394}
     m_Duration: 2.1420408163265305
@@ -9851,7 +9851,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 1
+    volume: 0
 --- !u!114 &4042105925896382992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10191,7 +10191,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 1
+    volume: 0
 --- !u!74 &6179302477722539603
 AnimationClip:
   m_ObjectHideFlags: 0
