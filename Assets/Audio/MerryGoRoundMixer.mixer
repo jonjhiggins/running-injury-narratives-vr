@@ -105,25 +105,6 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
---- !u!243 &-291143129653246679
-AudioMixerGroupController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: VOAS7
-  m_AudioMixer: {fileID: 24100000}
-  m_GroupID: 45281388e4b11cb48a6e2af004975496
-  m_Children: []
-  m_Volume: fefa7a9a9bf44854aa32a341205e1354
-  m_Pitch: 242dc4a2eda4bd144ba939d4afe31188
-  m_Send: 00000000000000000000000000000000
-  m_Effects:
-  - {fileID: 6330205230231476972}
-  m_UserColorIndex: 0
-  m_Mute: 0
-  m_Solo: 0
-  m_BypassEffects: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -146,7 +127,6 @@ AudioMixerController:
     - 30852b26d6e705e409d855489a3258b9
     - e015f24de4e610c479a73bfe1304f219
     - 46ea03fd3ef2f7744b44a4d127c25c80
-    - 45281388e4b11cb48a6e2af004975496
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -163,7 +143,6 @@ AudioMixerGroupController:
   - {fileID: -3870850913294122858}
   - {fileID: -7016244811816456131}
   - {fileID: -7662804172225323644}
-  - {fileID: -291143129653246679}
   m_Volume: 291db4fc2b7fcce47a4bb6694a160e98
   m_Pitch: dcb8d74f8584f314d9cb5cdd4329b1b9
   m_Send: 00000000000000000000000000000000
@@ -198,8 +177,7 @@ AudioMixerSnapshotController:
   m_SnapshotID: c024fdc0e0c960e4c82662689c218ac8
   m_FloatValues:
     b800ae4790061ac4599c06bdd4160b3c: 0.04171297
-    fefa7a9a9bf44854aa32a341205e1354: 7.9
-    e73d5d4b50c411441ba32a09485faec3: 5.1526933
+    e73d5d4b50c411441ba32a09485faec3: 9.925883
   m_TransitionOverrides: {}
 --- !u!244 &14995694135747987
 AudioMixerEffectController:
@@ -225,20 +203,6 @@ AudioMixerEffectController:
   m_EffectID: f9f88fc2adb8997478148c373197871c
   m_EffectName: Attenuation
   m_MixLevel: af80cfcc716b474429bb651b6d3e7ca3
-  m_Parameters: []
-  m_SendTarget: {fileID: 0}
-  m_EnableWetMix: 0
-  m_Bypass: 0
---- !u!244 &6330205230231476972
-AudioMixerEffectController:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_EffectID: 7cc1ab722ec1aac4e845d0a307b156a5
-  m_EffectName: Attenuation
-  m_MixLevel: 58bf6368a016510478cb7c776b2b6694
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
