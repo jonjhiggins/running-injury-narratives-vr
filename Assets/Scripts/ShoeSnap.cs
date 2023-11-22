@@ -21,12 +21,24 @@ public class ShoeSnap : MonoBehaviour
         gameObject.GetComponent<Rigidbody>().detectCollisions = false;
         var newSnappedShoe = Instantiate(snappedShoe, snappedShoe.transform.position, snappedShoe.transform.rotation, spawnContainer.transform);
         newSnappedShoe.SetActive(true);
-        var rigidbodies = snappedShoe.GetComponentsInChildren<Rigidbody>();
+        var rigidbodies = newSnappedShoe.GetComponentsInChildren<Rigidbody>();
 
         foreach (var rigidbody in rigidbodies)
         {
             rigidbody.AddExplosionForce(explosionForce, snappedShoe.transform.position, explosionRadius);
         }
+
+
+        var moveObjectTowardsTargets = newSnappedShoe.GetComponentsInChildren<MoveObjectTowardsTarget>();
+
+
+        foreach (var moveObjectTowardsTarget in moveObjectTowardsTargets)
+        {
+            moveObjectTowardsTarget.MoveTowardsTarget();
+            Debug.Log(moveObjectTowardsTarget);
+        }
+
+
     }
 
     
