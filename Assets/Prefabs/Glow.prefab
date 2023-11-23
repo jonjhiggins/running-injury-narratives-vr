@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7934607673223640871}
   - component: {fileID: 2604303643714351958}
   - component: {fileID: 2836173567537281878}
-  - component: {fileID: 4037805230717648354}
   - component: {fileID: 5597122363703605192}
   m_Layer: 0
   m_Name: Glow Background
@@ -85,28 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4037805230717648354
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563564265984334923}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!111 &5597122363703605192
 Animation:
   m_ObjectHideFlags: 0
@@ -134,7 +111,6 @@ GameObject:
   - component: {fileID: 851965344436373389}
   - component: {fileID: 5059228516900094503}
   - component: {fileID: 7375684297843751971}
-  - component: {fileID: 2150238943553789194}
   - component: {fileID: 3053296816541883992}
   m_Layer: 0
   m_Name: Glow Ring
@@ -208,28 +184,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2150238943553789194
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863214569686000786}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!111 &3053296816541883992
 Animation:
   m_ObjectHideFlags: 0
