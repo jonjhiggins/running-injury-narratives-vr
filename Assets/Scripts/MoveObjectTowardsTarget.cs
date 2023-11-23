@@ -25,13 +25,11 @@ public class MoveObjectTowardsTarget : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log($" allowmove {allowMove}");
         if (!allowMove)
         {
             return;
         }
         Vector3 relativePos = target.position - transform.position;
-        Debug.Log(relativePos);
         var distance = relativePos.sqrMagnitude;
         var rotateSpeedWithVelocity = rotateSpeed * distance;
 
