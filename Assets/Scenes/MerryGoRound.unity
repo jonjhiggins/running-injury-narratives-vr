@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.016852967, g: 0.020252915, b: 0.042700045, a: 1}
+  m_IndirectSpecularColor: {r: 0.13226376, g: 0.16068001, b: 0.33721483, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -216,6 +216,7 @@ Transform:
   m_Children:
   - {fileID: 406064854}
   - {fileID: 1305760994}
+  - {fileID: 811161449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &103652266
@@ -2132,6 +2133,8 @@ PlayableDirector:
     value: {fileID: 373335835}
   - key: {fileID: -7575238328725410355, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
     value: {fileID: 621341335}
+  - key: {fileID: 1622193647973293562, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
+    value: {fileID: 811161448}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &562314634
@@ -2795,7 +2798,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &771343801
@@ -2868,6 +2871,109 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1253097157588519969, guid: ce33628a1936a1e4b811bbfc4a4f39d0, type: 3}
   m_PrefabInstance: {fileID: 5383158095485671031}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &811161448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811161449}
+  - component: {fileID: 811161450}
+  - component: {fileID: 811161451}
+  m_Layer: 0
+  m_Name: RainAthleteObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &811161449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811161448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 56897976}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &811161450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811161448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a061625db004c488198039f47b4f1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  athleteObjects:
+  - {fileID: 919132149155446097, guid: f05ec92c2d004a94481b235420f5edaf, type: 3}
+  - {fileID: 919132149155446097, guid: da88e4be6e0cfea409d3dcd04b6cc8e2, type: 3}
+  - {fileID: 919132149155446097, guid: a4bea76a3e5ec8a4fb916a88bfc5d31d, type: 3}
+  - {fileID: 919132149155446097, guid: bd8f0a0fcd34fab4bab7693130eb80f1, type: 3}
+  - {fileID: 6971236317765423838, guid: 6b1d049d2296ba9498103d9832907456, type: 3}
+  waveDurationMin: 0.25
+  waveDurationMax: 1
+  numberOfObjectsPerWave: 1
+  xPosMin: -2
+  xPosMax: 2
+  zPosMin: -2
+  zPosMax: 2
+--- !u!114 &811161451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811161448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 3c081d91c5ad879478ee1f4a138fc4ee, type: 2}
+    - {fileID: 11400000, guid: 002630974a803d14ab9f69b3bc20eaac, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 811161450}
+          m_TargetAssemblyTypeName: RainAthleteObjects, Assembly-CSharp
+          m_MethodName: StartRain
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 811161450}
+          m_TargetAssemblyTypeName: RainAthleteObjects, Assembly-CSharp
+          m_MethodName: StopRain
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &822180929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
