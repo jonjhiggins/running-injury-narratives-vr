@@ -943,8 +943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d2a460442e3ca4e906e10f6ab02774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkIfCloseToHeadset: {fileID: 0}
-  timeline: {fileID: 0}
+  checkIfCloseToHeadset: {fileID: 1101389009}
+  timeline: {fileID: 614999935}
 --- !u!1 &617259726
 GameObject:
   m_ObjectHideFlags: 0
