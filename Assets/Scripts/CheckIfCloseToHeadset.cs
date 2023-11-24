@@ -25,11 +25,10 @@ public class CheckIfCloseToHeadset : MonoBehaviour
         {
             return;
         }
-        Vector3 distance = headset.transform.position - boxCollider.bounds.center;
 
-        ScaleDistanceIndicator(distance);
-
-        if (distance.sqrMagnitude < maxRange)
+        bool isCloseToHeadset = IsCloseToHeadset();
+        
+        if (isCloseToHeadset)
         {
             OnInRange.Invoke();
             checkDistance = false;
@@ -60,5 +59,12 @@ public class CheckIfCloseToHeadset : MonoBehaviour
         }
         checkDistance = true;
         checkDistanceHasBeenSet = true;
+    }
+
+    public bool IsCloseToHeadset()
+    {
+        Vector3 distance = headset.transform.position - boxCollider.bounds.center;
+        ScaleDistanceIndicator(distance);
+        return distance.sqrMagnitude < maxRange;
     }
 }

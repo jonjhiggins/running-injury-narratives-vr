@@ -679,6 +679,7 @@ GameObject:
   - component: {fileID: 614999939}
   - component: {fileID: 614999938}
   - component: {fileID: 614999940}
+  - component: {fileID: 614999941}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -873,6 +874,7 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: c36651638858be344aa535e7f464b9c1, type: 2}
     - {fileID: 11400000, guid: c301193e8b2aa3f46941f484bd0eb92c, type: 2}
+    - {fileID: 11400000, guid: f775f41ea992a43478ad0dca23a5f39f, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -902,6 +904,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 614999941}
+          m_TargetAssemblyTypeName: PauseIfNotCloseToHeadset, Assembly-CSharp
+          m_MethodName: Pause
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &614999940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,6 +931,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timeline: {fileID: 614999935}
+--- !u!114 &614999941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614999934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d2a460442e3ca4e906e10f6ab02774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkIfCloseToHeadset: {fileID: 0}
+  timeline: {fileID: 0}
 --- !u!1 &617259726
 GameObject:
   m_ObjectHideFlags: 0
