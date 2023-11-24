@@ -733,8 +733,6 @@ PlayableDirector:
     value: {fileID: 1734245362}
   - key: {fileID: -2620614923512874858, guid: acec646c57202364bbfd31658508b473, type: 2}
     value: {fileID: 385539020}
-  - key: {fileID: 7708635958809914724, guid: acec646c57202364bbfd31658508b473, type: 2}
-    value: {fileID: 6901997003265412527}
   - key: {fileID: 3845611733252222162, guid: acec646c57202364bbfd31658508b473, type: 2}
     value: {fileID: 1169166117}
   m_ExposedReferences:
@@ -3867,6 +3865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkipButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8305552239058241745, guid: f7a5c0afb65a4244894be0b0b6bb2e0c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3875,11 +3877,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f7a5c0afb65a4244894be0b0b6bb2e0c, type: 3}
---- !u!1 &6901997003265412527 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8305552239058241745, guid: f7a5c0afb65a4244894be0b0b6bb2e0c, type: 3}
-  m_PrefabInstance: {fileID: 6901997003265412526}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6901997003265412528 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2402788068090383868, guid: f7a5c0afb65a4244894be0b0b6bb2e0c, type: 3}
