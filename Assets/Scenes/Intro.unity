@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 63951660}
   - component: {fileID: 63951659}
   m_Layer: 0
-  m_Name: MerryGoRoundPosition
+  m_Name: LongevityPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14800,7 +14800,7 @@ GameObject:
   - component: {fileID: 2068520739}
   - component: {fileID: 2068520738}
   m_Layer: 0
-  m_Name: LongevityPosition
+  m_Name: MerryGoRoundPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

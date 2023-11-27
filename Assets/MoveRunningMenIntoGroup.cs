@@ -24,19 +24,22 @@ public class MoveRunningMenIntoGroup : MonoBehaviour
         {
             return;
         }
-        Vector3 relativePos = target.position - transform.position;
-        var distance = relativePos.sqrMagnitude;
+
+        float distance = 0;
 
         for (int i = 0; i < objectsToMove.Length; i++)
         {
             var objectTransform = objectsToMove[i].transform;
             objectTransform.position = Vector3.MoveTowards(objectTransform.position, target.position, Time.deltaTime * moveSpeed);
+
+            Vector3 relativePos = target.position - objectTransform.position;
+            distance += relativePos.sqrMagnitude;
         }
 
-
-        if (distance < 0.3)
+        if (distance < 0.01)
         {
             allowMove = false;
         }
+
     }
 }
