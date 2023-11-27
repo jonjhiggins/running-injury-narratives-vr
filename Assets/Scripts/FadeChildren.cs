@@ -36,7 +36,6 @@ public class FadeChildren : MonoBehaviour
         time += Time.deltaTime;
         float opacityChange = Mathf.Clamp01(time / fadeDuration);
         float opacity = fadingIn ? opacityChange : fadeInOpacity - opacityChange;
-        Debug.Log(opacity);
         SetOpacity(opacity);
 
         if (fadingIn && opacity >= fadeInOpacity)
