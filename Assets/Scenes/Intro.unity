@@ -11278,6 +11278,8 @@ GameObject:
   - component: {fileID: 1224329016}
   - component: {fileID: 1224329018}
   - component: {fileID: 1224329017}
+  - component: {fileID: 1224329019}
+  - component: {fileID: 1224329020}
   m_Layer: 5
   m_Name: TitleText
   m_TagString: Untagged
@@ -11401,6 +11403,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224329015}
   m_CullTransparentMesh: 1
+--- !u!114 &1224329019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224329015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1105da27ee4a84da8b67a3da0fe008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutDuration: 5
+  fadeInDuration: 5
+  fadeOutOpacity: 0
+  fadeInOpacity: 1
+  textMesh: {fileID: 0}
+--- !u!114 &1224329020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224329015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 445da05eff8082a45bcefb99ae3ddfb0, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1224329019}
+          m_TargetAssemblyTypeName: FadeText, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1243280334
 PrefabInstance:
   m_ObjectHideFlags: 0
