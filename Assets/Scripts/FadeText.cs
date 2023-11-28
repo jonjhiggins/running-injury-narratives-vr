@@ -10,24 +10,54 @@ public class FadeText : MonoBehaviour
     public float fadeInDuration = 1.3f;
     public float fadeOutOpacity = 0;
     public float fadeInOpacity = 1;
+    public bool startFadedOut = true;
 
-    public TMP_Text textMesh;
+    public TMP_Text textMeshPro;
 
-    void Start()
+    void Awake()
     {
-        if (textMesh == null)
+        if (textMeshPro == null)
         {
-            textMesh = gameObject.GetComponent<TMP_Text>();
+            textMeshPro = gameObject.GetComponent<TMP_Text>();
+        }
+
+        if (startFadedOut)
+        {
+            Debug.Log($"{gameObject.name} startFadedOut");
+            StartCoroutine(FadeRoutine(0f, true));
+
         }
     }
 
     public void FadeIn()
     {
-        textMesh.CrossFadeAlpha(fadeInOpacity, fadeOutDuration, false);
+        Debug.Log($"{gameObject.name} FadeIn");
+        StartCoroutine(FadeRoutine(fadeInDuration, false)); 
     }
 
     public void FadeOut()
     {
-        textMesh.CrossFadeAlpha(fadeOutOpacity, fadeOutDuration, false);
+        Debug.Log($"{gameObject.name} FadeOut");
+        StartCoroutine(FadeRoutine(fadeOutDuration, true));
+
+
+    }
+
+    IEnumerator FadeRoutine(float duration, bool fadeOut)
+    {
+        float elapsedTime = 0f;
+        float targetOpacity = fadeOut ? fadeOutOpacity : fadeInOpacity;
+        Color startColor = textMeshPro.color;
+        Color targetColor = new Color(startColor.r, startColor.g, startColor.b, targetOpacity);
+
+        while (elapsedTime < duration)
+        {
+            textMeshPro.color = Color.Lerp(startColor, targetColor, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Ensure the text is fully transparent at the end
+        textMeshPro.color = targetColor;
     }
 }
