@@ -728,8 +728,6 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -4485030189279222672, guid: b90e11e074e9c2c499b1dd3b24c9b587, type: 2}
     value: {fileID: 362601030}
-  - key: {fileID: -6750179304360172204, guid: b90e11e074e9c2c499b1dd3b24c9b587, type: 2}
-    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 9c54bad69d2f0c84c87ab5eee175e8b3: {fileID: 1101389000}
@@ -2048,9 +2046,13 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1988333672936193570, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988333672936193570, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: c4cd1cce38d99004d9a32b17c762be75, type: 3}
+      objectReference: {fileID: 8300000, guid: 8b3aaff9f14cb0b40b33102e83252d2d, type: 3}
     - target: {fileID: 4462362022503348754, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_Size.x
       value: 0.1976437
@@ -3473,10 +3475,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7409958925511135514, guid: f7a5c0afb65a4244894be0b0b6bb2e0c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7a5c0afb65a4244894be0b0b6bb2e0c, type: 3}
 --- !u!1 &1707012808
 GameObject:
