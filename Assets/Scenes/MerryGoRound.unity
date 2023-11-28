@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13226376, g: 0.16068001, b: 0.33721483, a: 1}
+  m_IndirectSpecularColor: {r: 0.016852967, g: 0.020252915, b: 0.042700045, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1027,7 +1027,7 @@ PrefabInstance:
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5b8316be97b7ecf45b7fc4eb01ac0fd4, type: 3}
+      objectReference: {fileID: 8300000, guid: fbae89728b4d3334da375f39f142bacb, type: 3}
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
@@ -1390,7 +1390,11 @@ PrefabInstance:
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5b8316be97b7ecf45b7fc4eb01ac0fd4, type: 3}
+      objectReference: {fileID: 8300000, guid: c10a68ecd8304b2439ec2bfde9d32ef5, type: 3}
+    - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3870850913294122858, guid: e91379d1398a06c47a867233ea1f9576, type: 2}
     - target: {fileID: 7528830509514277316, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3511,7 +3515,7 @@ PrefabInstance:
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5b8316be97b7ecf45b7fc4eb01ac0fd4, type: 3}
+      objectReference: {fileID: 8300000, guid: 8b3aaff9f14cb0b40b33102e83252d2d, type: 3}
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
@@ -3918,7 +3922,11 @@ PrefabInstance:
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5b8316be97b7ecf45b7fc4eb01ac0fd4, type: 3}
+      objectReference: {fileID: 8300000, guid: 77a8de320f41a924ca74ca8b0eb1a8a6, type: 3}
+    - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3870850913294122858, guid: e91379d1398a06c47a867233ea1f9576, type: 2}
     - target: {fileID: 7528830509514277316, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7215,7 +7223,11 @@ PrefabInstance:
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5b8316be97b7ecf45b7fc4eb01ac0fd4, type: 3}
+      objectReference: {fileID: 8300000, guid: 08aa7b154ac422d4a8e9b04459bd94a2, type: 3}
+    - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3870850913294122858, guid: e91379d1398a06c47a867233ea1f9576, type: 2}
     - target: {fileID: 7528830509514277316, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8391,7 +8403,7 @@ PrefabInstance:
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5b8316be97b7ecf45b7fc4eb01ac0fd4, type: 3}
+      objectReference: {fileID: 8300000, guid: fbae89728b4d3334da375f39f142bacb, type: 3}
     - target: {fileID: 7241099654809724236, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
