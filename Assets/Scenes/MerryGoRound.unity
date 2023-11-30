@@ -1249,10 +1249,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7528830509514277316, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 137262653}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 873468412922502160, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
 --- !u!4 &373335832 stripped
 Transform:
@@ -1618,9 +1615,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 464899107}
-    - targetCorrespondingSourceObject: {fileID: 873468412922502160, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
 --- !u!1 &464899097 stripped
 GameObject:
@@ -2096,6 +2090,7 @@ GameObject:
   - component: {fileID: 562314634}
   - component: {fileID: 562314633}
   - component: {fileID: 562314632}
+  - component: {fileID: 562314635}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -2121,6 +2116,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 4626a3915f85bba4093f83456d7bb4eb, type: 2}
     - {fileID: 11400000, guid: 569eae23ed9889f4bbc4a4bca0ca941f, type: 2}
     - {fileID: 11400000, guid: e54fced315b0dac4ea0fc637c39e4e31, type: 2}
+    - {fileID: 11400000, guid: 7084ca06ffd4d3340b14ca7b51312a4d, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -2175,6 +2171,20 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 562314635}
+          m_TargetAssemblyTypeName: ControlBirdDroneVolume, Assembly-CSharp
+          m_MethodName: SetVolume
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0.1
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -2276,6 +2286,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562314635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562314631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb18b5964c9b3a4fbf8dae447845052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &568290649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,9 +4012,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 917991247}
-    - targetCorrespondingSourceObject: {fileID: 873468412922502160, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
 --- !u!65 &917991238 stripped
 BoxCollider:
@@ -4331,9 +4350,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 982553391}
-    - targetCorrespondingSourceObject: {fileID: 873468412922502160, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
 --- !u!1 &982553381 stripped
 GameObject:
@@ -7471,9 +7487,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1775608484}
-    - targetCorrespondingSourceObject: {fileID: 873468412922502160, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
 --- !u!1 &1775608473 stripped
 GameObject:
@@ -8649,9 +8662,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 124409565795832}
-    - targetCorrespondingSourceObject: {fileID: 873468412922502160, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
 --- !u!82 &124409565795828 stripped
 AudioSource:
