@@ -22,6 +22,7 @@ public class CheckIfCloseToHeadset : MonoBehaviour
 
     private bool checkDistance = false;
     private bool checkDistanceHasBeenSet = false;
+    private Coroutine DelayShowBringMeCloseRoutine;
 
     void Update()
     {
@@ -61,7 +62,7 @@ public class CheckIfCloseToHeadset : MonoBehaviour
         }
         checkDistance = true;
         checkDistanceHasBeenSet = true;
-        StartCoroutine(DelayShowBringMeClose());
+        DelayShowBringMeCloseRoutine = StartCoroutine(DelayShowBringMeClose());
     }
 
     public bool IsCloseToHeadset()
@@ -81,6 +82,7 @@ public class CheckIfCloseToHeadset : MonoBehaviour
     private void OnCloseToHeadset()
     {
         bringMeCloser.SetActive(false);
+        StopCoroutine(DelayShowBringMeCloseRoutine);
         OnInRange.Invoke();
         checkDistance = false;
         distanceIndicator.SetActive(false);
