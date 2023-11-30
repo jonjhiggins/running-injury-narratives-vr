@@ -2088,10 +2088,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 53664464}
     - target: {fileID: -6971107063038802478, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
-      propertyPath: distanceIndicator
-      value: 
-      objectReference: {fileID: 1101389001}
-    - target: {fileID: -6971107063038802478, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OnInRange.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -2274,11 +2270,6 @@ Transform:
 --- !u!1 &1101389000 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
-  m_PrefabInstance: {fileID: 1101388998}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1101389001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5150728500637173804, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
   m_PrefabInstance: {fileID: 1101388998}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1101389002 stripped

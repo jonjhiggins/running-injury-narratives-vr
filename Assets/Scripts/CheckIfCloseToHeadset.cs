@@ -15,6 +15,10 @@ public class CheckIfCloseToHeadset : MonoBehaviour
     private float maxRange = 0;
     [SerializeField]
     private UnityEvent OnInRange;
+    [SerializeField]
+    private float waitDurationBeforeShowBringMeCloser = 5;
+    [SerializeField]
+    private GameObject bringMeCloser;
 
     private bool checkDistance = false;
     private bool checkDistanceHasBeenSet = false;
@@ -30,9 +34,7 @@ public class CheckIfCloseToHeadset : MonoBehaviour
         
         if (isCloseToHeadset)
         {
-            OnInRange.Invoke();
-            checkDistance = false;
-            distanceIndicator.SetActive(false);
+            OnCloseToHeadset();
         }
 
     }
@@ -59,6 +61,7 @@ public class CheckIfCloseToHeadset : MonoBehaviour
         }
         checkDistance = true;
         checkDistanceHasBeenSet = true;
+        StartCoroutine(DelayShowBringMeClose());
     }
 
     public bool IsCloseToHeadset()
@@ -66,5 +69,20 @@ public class CheckIfCloseToHeadset : MonoBehaviour
         Vector3 distance = headset.transform.position - boxCollider.bounds.center;
         ScaleDistanceIndicator(distance);
         return distance.sqrMagnitude < maxRange;
+    }
+
+    private IEnumerator DelayShowBringMeClose()
+    {
+        yield return new WaitForSeconds(waitDurationBeforeShowBringMeCloser);
+        bringMeCloser.SetActive(true);
+
+    }
+
+    private void OnCloseToHeadset()
+    {
+        bringMeCloser.SetActive(false);
+        OnInRange.Invoke();
+        checkDistance = false;
+        distanceIndicator.SetActive(false);
     }
 }
