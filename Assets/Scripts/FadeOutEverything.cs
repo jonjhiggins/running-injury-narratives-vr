@@ -6,20 +6,37 @@ public class FadeOutEverything : MonoBehaviour
     public float fadeDuration = 2.0f;
     public GameObject ovrCameraRig;
 
+    private Renderer[] renderers;
+
     public void Begin()
     {
+        renderers = GetFilteredRenderers();
+        SetShaderToFade();
         StartCoroutine(FadeOut());
     }
 
-    void Start()
+    private void SetShaderToFade()
     {
-        StartCoroutine(FadeOut());
+        foreach (Renderer renderer in renderers)
+        {
+            var material = renderer.material;
+            if (material != null)
+            {
+                material.SetInt("_Mode", 2);
+                // Set the rendering mode to "Fade"
+                material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+                material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+                material.SetInt("_ZWrite", 0);
+                material.DisableKeyword("_ALPHATEST_ON");
+                material.EnableKeyword("_ALPHABLEND_ON");
+                material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+                material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+            }
+        }
     }
 
     IEnumerator FadeOut()
     {
-        // Get all GameObjects with Renderer components in the scene excluding those under OVRCameraRig
-        Renderer[] renderers = GetFilteredRenderers();
 
         // Use Mathf.Lerp to smoothly interpolate between start and target alpha over time
         float elapsedTime = 0.0f;
