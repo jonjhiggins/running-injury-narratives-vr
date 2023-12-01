@@ -23,7 +23,6 @@ public class FadeText : MonoBehaviour
 
         if (startFadedOut)
         {
-            Debug.Log($"{gameObject.name} startFadedOut");
             StartCoroutine(FadeRoutine(0f, true));
 
         }
@@ -31,13 +30,11 @@ public class FadeText : MonoBehaviour
 
     public void FadeIn()
     {
-        Debug.Log($"{gameObject.name} FadeIn");
         StartCoroutine(FadeRoutine(fadeInDuration, false)); 
     }
 
     public void FadeOut()
     {
-        Debug.Log($"{gameObject.name} FadeOut");
         StartCoroutine(FadeRoutine(fadeOutDuration, true));
 
 
