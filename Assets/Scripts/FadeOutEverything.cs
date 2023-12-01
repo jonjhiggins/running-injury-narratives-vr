@@ -19,19 +19,27 @@ public class FadeOutEverything : MonoBehaviour
     {
         foreach (Renderer renderer in renderers)
         {
-            var material = renderer.material;
-            if (material != null)
+            foreach (Material mat in renderer.materials)
             {
-                material.SetInt("_Mode", 2);
-                // Set the rendering mode to "Fade"
-                material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-                material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-                material.SetInt("_ZWrite", 0);
-                material.DisableKeyword("_ALPHATEST_ON");
-                material.EnableKeyword("_ALPHABLEND_ON");
-                material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-                material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+                SetMaterialToFadeMode(mat);
             }
+           
+        }
+    }
+
+    private void SetMaterialToFadeMode(Material material)
+    {
+        if (material != null)
+        {
+            material.SetInt("_Mode", 2);
+            // Set the rendering mode to "Fade"
+            material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+            material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+            material.SetInt("_ZWrite", 0);
+            material.DisableKeyword("_ALPHATEST_ON");
+            material.EnableKeyword("_ALPHABLEND_ON");
+            material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+            material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
         }
     }
 
@@ -44,19 +52,12 @@ public class FadeOutEverything : MonoBehaviour
         {
             foreach (Renderer renderer in renderers)
             {
-                // Get the initial alpha value
-                float startAlpha = renderer.material.color.a;
+                foreach (Material material in renderer.materials)
+                {
+                    var newAlpha = GetAlphaValue(material, elapsedTime);
+                    SetAlphaOnMaterial(material, newAlpha);
 
-                // Define the target alpha value (fully transparent)
-                float targetAlpha = 0.0f;
-
-                // Calculate the new alpha value
-                float newAlpha = Mathf.Lerp(startAlpha, targetAlpha, elapsedTime / fadeDuration);
-
-                // Update the material's color with the new alpha value
-                Color newColor = renderer.material.color;
-                newColor.a = newAlpha;
-                renderer.material.color = newColor;
+                }
             }
 
             // Increment the elapsed time
@@ -69,10 +70,31 @@ public class FadeOutEverything : MonoBehaviour
         // Ensure the final alpha value is set to avoid rounding errors
         foreach (Renderer renderer in renderers)
         {
-            Color finalColor = renderer.material.color;
-            finalColor.a = 0.0f;
-            renderer.material.color = finalColor;
+            foreach (Material material in renderer.materials)
+            {
+                SetAlphaOnMaterial(material, 0f);
+
+            }
         }
+    }
+
+    private float GetAlphaValue(Material material, float elapsedTime)
+    {
+        // Get the initial alpha value
+        float startAlpha = material.color.a;
+
+        // Define the target alpha value (fully transparent)
+        float targetAlpha = 0.0f;
+
+        // Calculate the new alpha value
+        return Mathf.Lerp(startAlpha, targetAlpha, elapsedTime / fadeDuration);
+    }
+
+    void SetAlphaOnMaterial(Material material, float alpha)
+    {
+        Color finalColor = material.color;
+        finalColor.a = alpha;
+        material.color = finalColor;
     }
 
     Renderer[] GetFilteredRenderers()
