@@ -423,9 +423,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5521408488461509124}
+  - component: {fileID: 7885282309798147439}
   m_Layer: 0
   m_Name: RunningManInfographic
-  m_TagString: Untagged
+  m_TagString: infographicAthletes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,6 +451,22 @@ Transform:
   - {fileID: 661271030651884539}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!111 &7885282309798147439
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016308302731538647}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a86d57212c387d84e9fbcacd30dc1bb5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a86d57212c387d84e9fbcacd30dc1bb5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2128826833672482895
 GameObject:
   m_ObjectHideFlags: 0

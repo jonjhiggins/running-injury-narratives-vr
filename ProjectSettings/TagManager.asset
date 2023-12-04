@@ -6,6 +6,8 @@ TagManager:
   tags:
   - birds-drone
   - keepBetweenScenes
+  - inforgraphicAthletes
+  - infographicAthletes
   layers:
   - Default
   - TransparentFX
