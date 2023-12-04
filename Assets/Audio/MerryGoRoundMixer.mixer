@@ -102,6 +102,20 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-4604506368215098919
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5f0e9bb72d3148d49b1aa2ba1cfbe505
+  m_EffectName: Send
+  m_MixLevel: 5ae1f0a16be6df246a6abf14563824ac
+  m_Parameters: []
+  m_SendTarget: {fileID: 4808735761860955427}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-3870850913294122858
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -117,6 +131,26 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 14995694135747987}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &-1408969364908405764
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VO Athlete Stories
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 790b1f6dd3d17934eb1844b3ddd1a20d
+  m_Children: []
+  m_Volume: 4d6c8cea2da5f0b4798ecdac36d5ebf9
+  m_Pitch: 6ffed551d993c4f45bfb7a7f18fca485
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 5789794100360501869}
+  - {fileID: -4604506368215098919}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -144,6 +178,7 @@ AudioMixerController:
     - e015f24de4e610c479a73bfe1304f219
     - 46ea03fd3ef2f7744b44a4d127c25c80
     - d363e732595993b48a8fefaf1c1f40d3
+    - 790b1f6dd3d17934eb1844b3ddd1a20d
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -160,6 +195,7 @@ AudioMixerGroupController:
   - {fileID: -3870850913294122858}
   - {fileID: -7016244811816456131}
   - {fileID: -7662804172225323644}
+  - {fileID: -1408969364908405764}
   - {fileID: 3804915192743295781}
   m_Volume: 291db4fc2b7fcce47a4bb6694a160e98
   m_Pitch: dcb8d74f8584f314d9cb5cdd4329b1b9
@@ -195,12 +231,14 @@ AudioMixerSnapshotController:
   m_SnapshotID: c024fdc0e0c960e4c82662689c218ac8
   m_FloatValues:
     148b9290c92061b4ab017644f19dc0c1: 7.41
+    5ae1f0a16be6df246a6abf14563824ac: 0
     ef5adea331f61ea4e950608bf4119760: -33.3
     8f18f0941125d664dacc048b2511f6dc: 0
     b800ae4790061ac4599c06bdd4160b3c: -1.0800337
     785468c7f389f5b4088ee97b6d75b064: 4.19
     32146aa80b88db54189c4ba85b1783be: 0.25
     38b5560a033f11b4d816fccaabc2f88a: -20.5
+    4d6c8cea2da5f0b4798ecdac36d5ebf9: 4.165108
     e73d5d4b50c411441ba32a09485faec3: -3.8468575
     7c54c64cb20039e4294da7b1e600c86c: -14
   m_TransitionOverrides: {}
@@ -290,6 +328,20 @@ AudioMixerEffectController:
     m_GUID: 1d37beca72959c94d91a71887dd6ee80
   - m_ParameterName: Sidechain Mix
     m_GUID: 1052939928c1f1f4a94283b4685fcf87
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &5789794100360501869
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 704a557dfe4a2a94abe748806ef1d935
+  m_EffectName: Attenuation
+  m_MixLevel: 98f9f944a6278984ea335fabe80096ef
+  m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
