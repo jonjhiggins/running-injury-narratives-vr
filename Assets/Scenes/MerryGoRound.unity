@@ -8940,7 +8940,7 @@ MonoBehaviour:
         - m_Target: {fileID: 2055310016}
           m_TargetAssemblyTypeName: SoundFadeOut, Assembly-CSharp
           m_MethodName: FadeOut
-          m_Mode: 1
+          m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
