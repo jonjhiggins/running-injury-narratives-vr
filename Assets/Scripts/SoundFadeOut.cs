@@ -4,6 +4,7 @@ public class SoundFadeOut : MonoBehaviour
 {
     public AudioSource audioSource;
     public float fadeOutTime = 2f;
+    public float fadeOutVolume = 0f;
 
     private bool fadingOut = false;
 
@@ -23,16 +24,16 @@ public class SoundFadeOut : MonoBehaviour
 
     private void Update()
     {
-        if (fadingOut && audioSource != null && audioSource.volume > 0)
+        if (fadingOut && audioSource != null && audioSource.volume > fadeOutVolume)
         {
             // Calculate the new volume based on the elapsed time
-            float newVolume = Mathf.MoveTowards(audioSource.volume, 0f, Time.deltaTime / fadeOutTime);
+            float newVolume = Mathf.MoveTowards(audioSource.volume, fadeOutVolume, Time.deltaTime / fadeOutTime);
 
             // Set the new volume to the AudioSource
             audioSource.volume = newVolume;
         }
 
-        if (fadingOut && audioSource.volume <= 0)
+        if (fadingOut && audioSource.volume <= fadeOutVolume)
         {
             fadingOut = false;
         }

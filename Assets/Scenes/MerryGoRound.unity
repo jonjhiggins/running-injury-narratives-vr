@@ -2441,6 +2441,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1428440107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &591802517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7752052015212982321, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+  m_PrefabInstance: {fileID: 917991237}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &603653723
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,7 +3993,7 @@ PrefabInstance:
     - target: {fileID: -6971107063038802478, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OnInRange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 917991240}
+      objectReference: {fileID: 917991243}
     - target: {fileID: -6971107063038802478, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OnInRange.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -4019,7 +4024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6971107063038802478, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OnInRange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Stop
+      value: FadeOut
       objectReference: {fileID: 0}
     - target: {fileID: -6971107063038802478, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OnInRange.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -4035,7 +4040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6971107063038802478, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OnInRange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
+      value: SoundFadeOut, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: -6971107063038802478, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: OnInRange.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -4323,6 +4328,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 917991247}
+    - targetCorrespondingSourceObject: {fileID: 7752052015212982321, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 917991243}
   m_SourcePrefab: {fileID: 100100000, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
 --- !u!65 &917991238 stripped
 BoxCollider:
@@ -4350,6 +4358,21 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 1988333672936193570, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
   m_PrefabInstance: {fileID: 917991237}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &917991243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591802517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c87c2f3ae4450f48925476f09f409ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 917991240}
+  fadeOutTime: 2
+  fadeOutVolume: 0.5
 --- !u!114 &917991247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8777,6 +8800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2055310014}
   fadeOutTime: 2
+  fadeOutVolume: 0
 --- !u!114 &2055310017
 MonoBehaviour:
   m_ObjectHideFlags: 0
