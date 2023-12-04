@@ -2175,6 +2175,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: setShadersToFade
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_Name
       value: TutorialObject

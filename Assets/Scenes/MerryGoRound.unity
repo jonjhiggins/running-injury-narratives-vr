@@ -1128,6 +1128,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: setShadersToFade
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_Name
       value: As8ItWillAlwaysBeThatThing
@@ -1631,6 +1635,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462362022503348754, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: setShadersToFade
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
@@ -2394,7 +2402,7 @@ PlayableDirector:
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 0
+  m_InitialTime: 32.20000076293945
   m_SceneBindings:
   - key: {fileID: -434639555363872197, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
     value: {fileID: 1458619725}
@@ -4260,6 +4268,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2fdaba4fb441e66499be9b6c907a03ed, type: 2}
+    - target: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: setShadersToFade
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_Name
       value: As1ConstantCycle
@@ -4706,6 +4718,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462362022503348754, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: setShadersToFade
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
@@ -7907,6 +7923,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: setShadersToFade
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_Name
       value: As5RunThroughPain
@@ -9321,6 +9341,10 @@ PrefabInstance:
     - target: {fileID: 4462362022503348754, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      propertyPath: setShadersToFade
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       propertyPath: m_Name
