@@ -67,11 +67,18 @@ public class FadeChildren : MonoBehaviour
      for (int i = 0; i < renderers.Length; i++)
         {
             var renderer = renderers[i];
-            var material = renderer.material;
+            var materials = renderer.materials;
 
-            Color color = material.color;
-            color.a = alpha;
-            material.color = color;
+            for (var j = 0; j < materials.Length; j++)
+            {
+                var material = materials[j];
+                Color color = material.color;
+                color.a = alpha;
+                material.color = color;
+                materials[j] = material;
+            }
+            renderers[i].materials = materials;
+            
         }
     }
 

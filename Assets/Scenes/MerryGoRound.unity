@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.13226376, g: 0.16068001, b: 0.33721483, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -665,7 +665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cb617cd28c495745871a1f8b1c566ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cb617cd28c495745871a1f8b1c566ee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1259,6 +1259,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 137262653}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 373335844}
     - targetCorrespondingSourceObject: {fileID: 7752052015212982321, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1652508569}
@@ -1294,6 +1297,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c1a1d36e69ae545a053dafc6989411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &373335843 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+  m_PrefabInstance: {fileID: 373335831}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373335834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba18c17919a56442aab883c5a4f3bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &373335844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373335834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 2f5825506b54d0249a62382c4b01e9a9, type: 2}
+    - {fileID: 11400000, guid: 600acad930990394bbbf26b831517794, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 373335843}
+          m_TargetAssemblyTypeName: FadeChildren, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 373335843}
+          m_TargetAssemblyTypeName: FadeChildren, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &382727213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,6 +1818,7 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 3d0801e72cdb1404ca64756404f63144, type: 2}
+    - {fileID: 11400000, guid: 2f5825506b54d0249a62382c4b01e9a9, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -1774,6 +1834,31 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 464899114}
+          m_TargetAssemblyTypeName: FadeChildren, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &464899114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+  m_PrefabInstance: {fileID: 464899096}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464899097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba18c17919a56442aab883c5a4f3bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &541919587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2377,8 +2462,6 @@ PlayableDirector:
     value: {fileID: 811161448}
   - key: {fileID: 6925048951855038860, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
     value: {fileID: 2022185731}
-  - key: {fileID: -7009670642312313908, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
-    value: {fileID: 0}
   - key: {fileID: -5993929471918358111, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
     value: {fileID: 2055310013}
   m_ExposedReferences:
@@ -2571,6 +2654,18 @@ PrefabInstance:
       propertyPath: m_AABB.m_Extent.z
       value: 0.09243198
       objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: bc27780eca124e242aa5b789b7038b75, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 41cbb3c700554cd4fb5578804c02c868, type: 2}
+    - target: {fileID: -3887185075125053422, guid: bc27780eca124e242aa5b789b7038b75, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 69da2153838e08d4da99fed1500975a5, type: 2}
+    - target: {fileID: -3887185075125053422, guid: bc27780eca124e242aa5b789b7038b75, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 275aa9028d2eac246b01bd6ee0fd8257, type: 2}
     - target: {fileID: 919132149155446097, guid: bc27780eca124e242aa5b789b7038b75, type: 3}
       propertyPath: m_Name
       value: dumbbell-animation
@@ -3632,6 +3727,7 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: ac00ae75c78606743bd8a402e61c44ff, type: 2}
+    - {fileID: 11400000, guid: 2f5825506b54d0249a62382c4b01e9a9, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -3674,6 +3770,20 @@ MonoBehaviour:
         - m_Target: {fileID: 917991240}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 917991253}
+          m_TargetAssemblyTypeName: FadeChildren, Assembly-CSharp
+          m_MethodName: FadeIn
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4414,6 +4524,17 @@ MonoBehaviour:
   spawnContainer: {fileID: 1335835768}
   explosionForce: 0
   explosionRadius: 0
+--- !u!114 &917991253 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+  m_PrefabInstance: {fileID: 917991237}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822180929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba18c17919a56442aab883c5a4f3bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &931232400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
@@ -4772,6 +4893,7 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 3d0801e72cdb1404ca64756404f63144, type: 2}
+    - {fileID: 11400000, guid: 2f5825506b54d0249a62382c4b01e9a9, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -4787,6 +4909,31 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982553398}
+          m_TargetAssemblyTypeName: FadeChildren, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &982553398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+  m_PrefabInstance: {fileID: 982553380}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982553381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba18c17919a56442aab883c5a4f3bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &989925679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4805,7 +4952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 20588593371233162, guid: 79a51af1444a00244847adbf474c3bc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 20588593371233162, guid: 79a51af1444a00244847adbf474c3bc6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6140,7 +6287,7 @@ Transform:
   m_GameObject: {fileID: 1196348536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.103, z: 0}
+  m_LocalPosition: {x: 0, y: 0.103, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7265,7 +7412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d365f3b32d357346965b68ce63fce5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d365f3b32d357346965b68ce63fce5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7913,14 +8060,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: df8295dc9d9825a418acc0743ce797a3, type: 2}
     - {fileID: 11400000, guid: 3d0801e72cdb1404ca64756404f63144, type: 2}
+    - {fileID: 11400000, guid: 2f5825506b54d0249a62382c4b01e9a9, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: CloneAndRainDumbbells, Assembly-CSharp
-          m_MethodName: CloneDumbbellsAnimation
+        - m_Target: {fileID: 1775608484}
+          m_TargetAssemblyTypeName: FloatAwayChildObject, Assembly-CSharp
+          m_MethodName: FloatAway
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7932,9 +8079,9 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1775608484}
-          m_TargetAssemblyTypeName: FloatAwayChildObject, Assembly-CSharp
-          m_MethodName: FloatAway
+        - m_Target: {fileID: 1775608491}
+          m_TargetAssemblyTypeName: FadeChildren, Assembly-CSharp
+          m_MethodName: FadeIn
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7975,6 +8122,17 @@ MonoBehaviour:
   childObject: {fileID: 621341331}
   spawnContainer: {fileID: 1335835768}
   floatAwaySound: {fileID: 8300000, guid: 61f6cc70398be1e4ba879eb84c0b09dc, type: 3}
+--- !u!114 &1775608491 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+  m_PrefabInstance: {fileID: 1775608472}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775608473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba18c17919a56442aab883c5a4f3bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1781650507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7752052015212982321, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
@@ -9337,6 +9495,7 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 3d0801e72cdb1404ca64756404f63144, type: 2}
     - {fileID: 11400000, guid: 7337895b2995a34439ecff4a0aff7a12, type: 2}
+    - {fileID: 11400000, guid: 2f5825506b54d0249a62382c4b01e9a9, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -9357,6 +9516,20 @@ MonoBehaviour:
         - m_Target: {fileID: 124409565795832}
           m_TargetAssemblyTypeName: CloneMedal, Assembly-CSharp
           m_MethodName: Clone
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 124409565795841}
+          m_TargetAssemblyTypeName: FadeChildren, Assembly-CSharp
+          m_MethodName: FadeIn
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9410,6 +9583,17 @@ MonoBehaviour:
   audioSource: {fileID: 124409565795829}
   fadeOutTime: 2
   fadeOutVolume: 0
+--- !u!114 &124409565795841 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4554498647476030405, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
+  m_PrefabInstance: {fileID: 124409565795827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931232400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba18c17919a56442aab883c5a4f3bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5383158095485671031
 PrefabInstance:
   m_ObjectHideFlags: 0
