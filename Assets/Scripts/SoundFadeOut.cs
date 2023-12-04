@@ -39,8 +39,10 @@ public class SoundFadeOut : MonoBehaviour
         }
     }
 
-    public void FadeOut()
+    public void FadeOut(float newFadeOutVolume = 0)
     {
+        fadeOutVolume = newFadeOutVolume;
         fadingOut = true;
     }
+
 }
