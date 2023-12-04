@@ -19,15 +19,17 @@ public class FadeOutEverything : MonoBehaviour
     {
         foreach (Renderer renderer in renderers)
         {
-            foreach (Material mat in renderer.materials)
+            var materials = renderer.materials;
+            for (var i = 0; i < materials.Length; i++)
             {
-                SetMaterialToFadeMode(mat);
+                var material = materials[i];
+                materials[i] = SetMaterialToFadeMode(material);
             }
-           
+            renderer.materials = materials;
         }
     }
 
-    private void SetMaterialToFadeMode(Material material)
+    private Material SetMaterialToFadeMode(Material material)
     {
         if (material != null)
         {
@@ -41,6 +43,7 @@ public class FadeOutEverything : MonoBehaviour
             material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
             material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
         }
+        return material;
     }
 
     IEnumerator FadeOut()
@@ -52,12 +55,14 @@ public class FadeOutEverything : MonoBehaviour
         {
             foreach (Renderer renderer in renderers)
             {
-                foreach (Material material in renderer.materials)
+                var materials = renderer.materials;
+                for (var i = 0; i < materials.Length; i++)
                 {
+                    var material = materials[i];
                     var newAlpha = GetAlphaValue(material, elapsedTime);
-                    SetAlphaOnMaterial(material, newAlpha);
-
+                    materials[i] = SetAlphaOnMaterial(material, newAlpha);
                 }
+                renderer.materials = materials;
             }
 
             // Increment the elapsed time
@@ -70,11 +75,13 @@ public class FadeOutEverything : MonoBehaviour
         // Ensure the final alpha value is set to avoid rounding errors
         foreach (Renderer renderer in renderers)
         {
-            foreach (Material material in renderer.materials)
+            var materials = renderer.materials;
+            for (var i = 0; i < materials.Length; i++)
             {
-                SetAlphaOnMaterial(material, 0f);
-
+                var material = materials[i];
+                materials[i] = SetAlphaOnMaterial(material, 0f);
             }
+            renderer.materials = materials;
         }
     }
 
@@ -90,11 +97,12 @@ public class FadeOutEverything : MonoBehaviour
         return Mathf.Lerp(startAlpha, targetAlpha, elapsedTime / fadeDuration);
     }
 
-    void SetAlphaOnMaterial(Material material, float alpha)
+    Material SetAlphaOnMaterial(Material material, float alpha)
     {
         Color finalColor = material.color;
         finalColor.a = alpha;
         material.color = finalColor;
+        return material;
     }
 
     Renderer[] GetFilteredRenderers()
