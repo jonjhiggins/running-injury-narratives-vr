@@ -7,6 +7,8 @@ public class RainAthleteObjects : MonoBehaviour
     [SerializeField]
     private List<GameObject> athleteObjects = new List<GameObject>();
     [SerializeField]
+    private Material athleteObjectMaterial;
+    [SerializeField]
     private float waveDurationMin = 1;
     [SerializeField]
     private float waveDurationMax = 10;
@@ -58,11 +60,8 @@ public class RainAthleteObjects : MonoBehaviour
             var newRotation = GetRandomRotation();
             var randomAthleteObject = GetRandomAthleteObject();
             var newObject = Instantiate(randomAthleteObject, gameObject.transform, true);
-            newObject.AddComponent<BoxCollider>();
-            var rb = newObject.AddComponent<Rigidbody>();
-            rb.mass = 0.01f;
-            rb.drag = 1f;
-            rb.AddTorque(GetRandomPosition());
+            SetObjectAppearance(newObject);
+            SetObjectPhysics(newObject);
             newObject.transform.localPosition = newPosition;
             newObject.transform.localRotation = newRotation;
             newObject.SetActive(true);
@@ -71,6 +70,29 @@ public class RainAthleteObjects : MonoBehaviour
         {
             StartCoroutine(DelayedRainWave());
         }
+    }
+
+    private void SetObjectAppearance(GameObject newObject)
+    {
+        var renderer = newObject.GetComponent<Renderer>();
+        if (renderer != null && athleteObjectMaterial != null)
+        {
+            var materials = renderer.materials;
+            for (var i = 0; i < materials.Length; i++)
+            {
+                materials[i] = athleteObjectMaterial;
+            }
+            renderer.materials = materials;
+        }
+    }
+
+    private void SetObjectPhysics(GameObject newObject)
+    {
+        newObject.AddComponent<CapsuleCollider>();
+        var rb = newObject.AddComponent<Rigidbody>();
+        rb.mass = 0.01f;
+        rb.drag = 1f;
+        rb.AddTorque(GetRandomPosition());
     }
 
     private Vector3 GetRandomPosition()
