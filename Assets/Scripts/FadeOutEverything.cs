@@ -17,15 +17,16 @@ public class FadeOutEverything : MonoBehaviour
 
     private void SetShaderToFade()
     {
-        foreach (Renderer renderer in renderers)
+        for (var r = 0; r < renderers.Length; r++)
+            
         {
-            var materials = renderer.materials;
+            var materials = renderers[r].materials;
             for (var i = 0; i < materials.Length; i++)
             {
                 var material = materials[i];
                 materials[i] = SetMaterialToFadeMode(material);
             }
-            renderer.materials = materials;
+            renderers[r].materials = materials;
         }
     }
 
