@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13226376, g: 0.16068001, b: 0.33721483, a: 1}
+  m_IndirectSpecularColor: {r: 0.000004051012, g: 0.0000044602075, b: 0.0000063902776, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1457,7 +1457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &438544206
 Transform:
   m_ObjectHideFlags: 0
@@ -2841,6 +2841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: track lines animated
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec137ff6cd88b3841974b2e1454e3d97, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3655,7 +3659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &730258088
 Transform:
   m_ObjectHideFlags: 0
@@ -9148,7 +9152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1858485187
 Transform:
   m_ObjectHideFlags: 0
