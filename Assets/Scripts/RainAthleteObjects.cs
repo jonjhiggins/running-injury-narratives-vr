@@ -25,6 +25,8 @@ public class RainAthleteObjects : MonoBehaviour
     private float zPosMax;
 
     private bool allowRain;
+    private string medalTagName = "lowPolyMedal";
+    private string medalGameObjectName = "lpr-medal";
 
     private void Start()
     {
@@ -65,6 +67,12 @@ public class RainAthleteObjects : MonoBehaviour
             newObject.transform.localPosition = newPosition;
             newObject.transform.localRotation = newRotation;
             newObject.SetActive(true);
+
+            if (randomAthleteObject.name == medalGameObjectName)
+            {
+                // Tag so these float up in other script
+                newObject.tag = medalTagName;
+            }
         }
         if (allowRain)
         {

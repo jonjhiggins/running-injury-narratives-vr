@@ -8,6 +8,8 @@ TagManager:
   - keepBetweenScenes
   - inforgraphicAthletes
   - infographicAthletes
+  - lowPolyMedal
+  - notLowPolyMedal
   layers:
   - Default
   - TransparentFX

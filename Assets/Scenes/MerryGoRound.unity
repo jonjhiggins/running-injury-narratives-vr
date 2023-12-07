@@ -2827,8 +2827,8 @@ PlayableDirector:
     value: {fileID: 1551259693}
   - key: {fileID: 1146472571618217299, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
     value: {fileID: 569205965}
-  - key: {fileID: -4322519471324653206, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
-    value: {fileID: 583824865}
+  - key: {fileID: 7492593467373608527, guid: 071692b765d9f9b42b606768d16865b7, type: 2}
+    value: {fileID: 583824863}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &562314634
@@ -3069,7 +3069,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7016244811816456131, guid: e91379d1398a06c47a867233ea1f9576, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0ae5ede00b7130d4f96bb2c08c5d0ede, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
@@ -4606,6 +4606,8 @@ GameObject:
   - component: {fileID: 811161449}
   - component: {fileID: 811161450}
   - component: {fileID: 811161451}
+  - component: {fileID: 811161452}
+  - component: {fileID: 811161453}
   m_Layer: 0
   m_Name: RainAthleteObjects
   m_TagString: Untagged
@@ -4670,6 +4672,8 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 3c081d91c5ad879478ee1f4a138fc4ee, type: 2}
     - {fileID: 11400000, guid: 002630974a803d14ab9f69b3bc20eaac, type: 2}
+    - {fileID: 11400000, guid: 71d34cc3b95508143b038501e382ae9d, type: 2}
+    - {fileID: 11400000, guid: 600acad930990394bbbf26b831517794, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -4699,6 +4703,55 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 811161452}
+          m_TargetAssemblyTypeName: FloatUpMedalsHideOthers, Assembly-CSharp
+          m_MethodName: Begin
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &811161452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811161448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a645f82b9c98944db27122802d7f2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 811161448}
+  target: {fileID: 1011806223}
+  duration: 5
+  moveSpeed: 0.25
+--- !u!114 &811161453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811161448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba18c17919a56442aab883c5a4f3bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  fadeInOpacity: 1
+  fadeOutOpacity: 0
+  setShadersToFade: 0
 --- !u!1 &822180929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5218502050898313852, guid: 6a2368606345f5f4ab7858ab2e96573b, type: 3}
