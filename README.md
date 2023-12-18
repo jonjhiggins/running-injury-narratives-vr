@@ -1,4 +1,8 @@
-# running-injury-narratives-vr
+# Storying Sport Injury Experiences in VR
+
+
+https://github.com/jonjhiggins/running-injury-narratives-vr/assets/1374543/43e0a276-6809-4780-82a3-fbb15f50f9cb
+
 
 Immerse yourself in the frustrating and exhausting world of the injured athlete in this virtual reality experience, while understanding the sports psychology that underpins their experience.
 
